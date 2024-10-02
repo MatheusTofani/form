@@ -12,6 +12,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .box {
@@ -45,18 +48,24 @@ input:focus {
 
 input::placeholder {
     color: #ccc;
-    
+
+}
+
+label {
+    margin: 38px 0;
 }
 
 .inputUser {
     background: url('icon.png') no-repeat left center;
-    margin-bottom: 38px;
+    margin-bottom: 10px;
 }
 
 .inputPassword {
     background: url('padlock.png') no-repeat left center;
-    margin-bottom: 23px;
+    margin-bottom: 10px;
 }
+
+
 
 a {
     text-decoration: none;
@@ -95,16 +104,26 @@ p {
 
 .googleBtn {
     border: #C3C3C3 solid 1px;
+    transition: all .3s;
 }
 
 .facebookBtn {
     background-color: #3B5998;
     border: #152E61 solid 1px;
     color: white;
+    transition: all .3s;
+}
+
+.facebookBtn:hover {
+    background-color: #273a63;
 }
 
 .googleImg {
     margin-right: 10px;
+}
+
+.googleBtn:hover {
+    background-color: rgb(231, 231, 231);
 }
 
 .btn {
@@ -119,4 +138,104 @@ p {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+
+span {
+    font-size: 14px;
+    color: rgb(172, 53, 53);
+}
+
+@media (max-width: 687px) {
+
+    .box {
+        height: 530px;
+        width: 300px;
+        background-color: #F2F2F2;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+        padding: 24px;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    input {
+        font-size: 12px;
+        padding: 8px 0;
+        padding-left: 30px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input::placeholder {
+        color: #ccc;
+
+    }
+
+    .inputUser {
+        background: url('icon.png') no-repeat left center;
+        margin-bottom: 10px;
+    }
+
+    .inputPassword {
+        background: url('padlock.png') no-repeat left center;
+        margin-bottom: 15px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    button {
+        width: 100%;
+        height: 30px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .submitBtn {
+        margin-top: 12px;
+        color: white;
+        font-size: 15px;
+        font-weight: 700;
+        background: linear-gradient(90deg, rgba(234, 0, 255, 0.69) 0%, rgba(31, 24, 240, 0.69) 100%);
+        border: none;
+        transition: all .2s;
+    }
+
+    .submitBtn:hover {
+        box-shadow: 0 0 15px rgba(186, 85, 211, 0.8), 0 0 20px rgba(186, 85, 211, 0.6), 0 0 20px rgba(186, 85, 211, 0.4);
+    }
+
+    p {
+        margin: 13px 0;
+        text-align: center;
+        font-size: 12px;
+    }
+
+
+    .btn img {
+        height: 20px;
+    }
+
+    .btn {
+        font-size: 15px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 }
