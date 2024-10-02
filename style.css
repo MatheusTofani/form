@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+}
+
+body {
+    background-image: url(background.png);
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 733px;
+    width: 435px;
+    background-color: #F2F2F2;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    padding: 48px;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+input {
+    border: none;
+    border-bottom: solid 2px #ccc;
+    background-color: transparent;
+    width: 100%;
+    font-size: 14px;
+    padding: 11px 0;
+    padding-left: 30px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: #ccc;
+    
+}
+
+.inputUser {
+    background: url('icon.png') no-repeat left center;
+    margin-bottom: 38px;
+}
+
+.inputPassword {
+    background: url('padlock.png') no-repeat left center;
+    margin-bottom: 23px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submitBtn {
+    margin-top: 23px;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(90deg, rgba(234, 0, 255, 0.69) 0%, rgba(31, 24, 240, 0.69) 100%);
+    border: none;
+    transition: all .2s;
+}
+
+.submitBtn:hover {
+    box-shadow: 0 0 20px rgba(186, 85, 211, 0.8), 0 0 30px rgba(186, 85, 211, 0.6), 0 0 40px rgba(186, 85, 211, 0.4);
+}
+
+p {
+    margin: 26px 0;
+    text-align: center;
+}
+
+.googleBtn {
+    border: #C3C3C3 solid 1px;
+}
+
+.facebookBtn {
+    background-color: #3B5998;
+    border: #152E61 solid 1px;
+    color: white;
+}
+
+.googleImg {
+    margin-right: 10px;
+}
+
+.btn {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.criarConta {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
